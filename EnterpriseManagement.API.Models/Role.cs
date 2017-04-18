@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.API.Models
+namespace EnterpriseManagement.Models
 {
-    public class Class1
+    public class Role:BaseEntity
     {
     }
 }
