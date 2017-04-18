@@ -91,6 +91,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EnterpriseManagement.API.Shared\EnterpriseManagement.API.Shared.csproj">
+      <Project>{8a0f72d0-d444-47e0-8264-32f453c31d08}</Project>
+      <Name>EnterpriseManagement.API.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
