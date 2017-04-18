@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.ResourceManagement
+namespace EnterpriseManagement.Models.Inventory.Enum
 {
-    class Plan
+    public enum ItemType
     {
+        NotSet = 0
     }
 }

@@ -1,7 +1,9 @@
-﻿using EnterpriseManagement.Models.InventoryManagement;
-using EnterpriseManagement.Models.OrderManagement;
+﻿using EnterpriseManagement.Models.Inventory;
+using EnterpriseManagement.Models.Fulfillment;
 using EnterpriseManagement.Models.TimeManagement;
 using System.Data.Entity;
+
+using EnterpriseManagement.API.Shared;
 
 namespace EnterpriseManagement.Models
 {
@@ -9,7 +11,7 @@ namespace EnterpriseManagement.Models
     public class EnterpriseManagementDbContext : DbContext
     {
         public EnterpriseManagementDbContext()
-            : base("Name=EnterpriseManagement")
+            : base(Constants.DatabaseConnectionString)
         {
             Database.SetInitializer<EnterpriseManagementDbContext>(null);
         }

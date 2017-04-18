@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.OrderManagement.Enum
+namespace EnterpriseManagement.Models.Fulfillment.Enum
 {
     public enum OrderType
     {

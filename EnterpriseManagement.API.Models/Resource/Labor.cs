@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.InventoryManagement.Enum
+namespace EnterpriseManagement.Models.Resource
 {
-    public enum ItemType
+    class Labor
     {
-        NotSet = 0
     }
 }

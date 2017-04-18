@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EnterpriseManagement.Models.InventoryManagement
+namespace EnterpriseManagement.Models.Inventory
 {
     public class Site : BaseEntity
     {

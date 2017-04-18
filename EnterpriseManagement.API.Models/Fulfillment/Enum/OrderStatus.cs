@@ -1,4 +1,4 @@
-﻿namespace EnterpriseManagement.Models.OrderManagement.Enum
+﻿namespace EnterpriseManagement.Models.Fulfillment.Enum
 {
     public enum OrderStatus
     {

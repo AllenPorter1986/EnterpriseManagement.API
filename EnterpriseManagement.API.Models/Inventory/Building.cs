@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.InventoryManagement
+namespace EnterpriseManagement.Models.Inventory
 {
     public class Building : BaseEntity
     {

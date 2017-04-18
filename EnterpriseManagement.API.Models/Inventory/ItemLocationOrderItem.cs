@@ -1,8 +1,8 @@
-﻿using EnterpriseManagement.Models.OrderManagement;
+﻿using EnterpriseManagement.Models.Fulfillment;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EnterpriseManagement.Models.InventoryManagement
+namespace EnterpriseManagement.Models.Inventory
 {
     public class ItemLocationOrderItem
     {

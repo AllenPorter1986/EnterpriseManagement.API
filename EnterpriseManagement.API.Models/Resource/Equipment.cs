@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.ResourceManagement
+namespace EnterpriseManagement.Models.Resource
 {
-    class Volume
+    class Equipment
     {
     }
 }

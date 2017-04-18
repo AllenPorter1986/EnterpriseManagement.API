@@ -1,11 +1,11 @@
-﻿using EnterpriseManagement.Models.InventoryManagement.Enum;
+﻿using EnterpriseManagement.Models.Inventory.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.InventoryManagement
+namespace EnterpriseManagement.Models.Inventory
 {
    public class Item : BaseEntity
     {
