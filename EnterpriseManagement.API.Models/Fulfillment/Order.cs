@@ -1,8 +1,8 @@
-﻿using EnterpriseManagement.Models.Fulfillment.Enum;
-using EnterpriseManagement.Models.TimeManagement;
+﻿using EnterpriseManagement.API.Models.Fulfillment.Enum;
+using EnterpriseManagement.API.Models.Time;
 using System.Collections.Generic;
 
-namespace EnterpriseManagement.Models.Fulfillment
+namespace EnterpriseManagement.API.Models.Fulfillment
 {
     public class Order: BaseEntity
     {

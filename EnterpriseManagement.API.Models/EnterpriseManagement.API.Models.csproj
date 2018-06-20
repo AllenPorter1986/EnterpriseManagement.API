@@ -84,8 +84,9 @@
     <Compile Include="Time\Function.cs" />
     <Compile Include="Time\Record.cs" />
     <Compile Include="Time\Task.cs" />
+    <Compile Include="Time\TaskDetail.cs" />
     <Compile Include="Time\TimeSheet.cs" />
-    <Compile Include="Time\TimeSheetRecord.cs" />
+    <Compile Include="Time\RecordTaskDetail.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>

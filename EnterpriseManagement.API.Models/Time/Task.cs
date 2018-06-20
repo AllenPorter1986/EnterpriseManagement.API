@@ -1,18 +1,17 @@
-﻿using EnterpriseManagement.Models.Fulfillment;
+﻿using EnterpriseManagement.API.Models;
 using System.Collections.Generic;
 
-namespace EnterpriseManagement.Models.TimeManagement
+namespace EnterpriseManagement.API.Models.Time
 {
     public class Task : BaseEntity
     {
         public Task()
         {
-            Orders = new HashSet<Order>();
+            Details = new HashSet<TaskDetail>();
         }
 
-        public int FunctionId { get; set; }
         public int? ClientId { get; set; }
-        public ICollection<Order> Orders { get; set; }
+        public ICollection<TaskDetail> Details { get; set; }
 
         // Navigation Properties
         public virtual Client Client { get; set; }

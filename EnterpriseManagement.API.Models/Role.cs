@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models
+namespace EnterpriseManagement.API.Models
 {
     public class Role:BaseEntity
     {

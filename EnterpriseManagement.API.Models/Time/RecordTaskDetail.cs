@@ -6,21 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.TimeManagement
+namespace EnterpriseManagement.API.Models.Time
 {
-    public class TimeSheetRecord
+    public class RecordTaskDetail
     {
         [Key]
         [Column(Order = 1)]
-        public int TimeSheetId { get; set; }
+        public int RecordId { get; set; }
         [Key]
         [Column(Order = 2)]
-        public int RecordId { get; set; }
-        public int Sequence { get; set; }
-        [ForeignKey("TimeSheetId")]
-        public virtual TimeSheet TimeSheet { get; set; }
-        [ForeignKey("RecordId")]
+        public int TaskId { get; set; }
+        [ForeignKey("TaskDetailId")]
         public virtual Record Record { get; set; }
-
+        [ForeignKey("TaskDetailId")]
+        public virtual TaskDetail TaskDetail { get; set; }
     }
 }

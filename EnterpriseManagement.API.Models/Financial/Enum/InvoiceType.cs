@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.Billing.Enum
+namespace EnterpriseManagement.API.Models.Billing.Enum
 {
     public enum InvoiceType
     {

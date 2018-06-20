@@ -1,4 +1,4 @@
-﻿namespace EnterpriseManagement.Models.TimeManagment.Enum
+﻿namespace EnterpriseManagement.API.Models.TimeManagment.Enum
 {
     public enum TimeSheetStatus
     {

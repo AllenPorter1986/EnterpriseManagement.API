@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.TimeManagement.Enum
+namespace EnterpriseManagement.API.Models.Time.Enum
 {
     public enum FunctionType
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.Inventory
+namespace EnterpriseManagement.API.Models.Inventory
 {
     public class Location:BaseEntity
     {

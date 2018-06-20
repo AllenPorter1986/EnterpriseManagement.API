@@ -1,11 +1,11 @@
-﻿using EnterpriseManagement.Models.Inventory;
-using EnterpriseManagement.Models.Fulfillment;
-using EnterpriseManagement.Models.TimeManagement;
+﻿using EnterpriseManagement.API.Models.Inventory;
+using EnterpriseManagement.API.Models.Fulfillment;
+using EnterpriseManagement.API.Models.Time;
 using System.Data.Entity;
 
 using EnterpriseManagement.API.Shared;
 
-namespace EnterpriseManagement.Models
+namespace EnterpriseManagement.API.Models
 {
 
     public class EnterpriseManagementDbContext : DbContext
@@ -25,16 +25,15 @@ namespace EnterpriseManagement.Models
 
             base.OnModelCreating(modelBuilder);
         }
-        
+
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Client> Clients { get; set; }
 
         //TimeSheet Management
-        public virtual DbSet<TimeSheet> TimeSheets { get; set; }
-        public virtual DbSet<TimeSheetRecord> TimeSheetRecords { get; set; }
+        public virtual DbSet<TimeSheet> TimeSheets { get; set; }        
         public virtual DbSet<Record> Records { get; set; }
-        public virtual DbSet<Function> Functions { get; set; }
         public virtual DbSet<Task> Tasks { get; set; }
+        public virtual DbSet<Function> Functions { get; set; }
 
         //Order Management
         public virtual DbSet<Order> Orders { get; set; }

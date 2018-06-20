@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace EnterpriseManagement.Models
+namespace EnterpriseManagement.API.Models
 {
     /// <summary>
     /// This class provides the base elements of all classes in the Model    

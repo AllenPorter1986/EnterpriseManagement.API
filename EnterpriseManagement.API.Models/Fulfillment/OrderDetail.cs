@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EnterpriseManagement.Models.Fulfillment
+namespace EnterpriseManagement.API.Models.Fulfillment
 {
     public class OrderDetail: BaseEntity
     {

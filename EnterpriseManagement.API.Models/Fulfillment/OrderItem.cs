@@ -1,7 +1,7 @@
-﻿using EnterpriseManagement.Models.Inventory;
+﻿using EnterpriseManagement.API.Models.Inventory;
 using System.Collections.Generic;
 
-namespace EnterpriseManagement.Models.Fulfillment
+namespace EnterpriseManagement.API.Models.Fulfillment
 {
     public class OrderItem:BaseEntity
     {

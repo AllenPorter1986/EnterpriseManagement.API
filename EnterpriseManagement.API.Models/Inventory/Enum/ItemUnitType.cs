@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.Inventory.Enum
+namespace EnterpriseManagement.API.Models.Inventory.Enum
 {
     public enum ItemUnitType
     {

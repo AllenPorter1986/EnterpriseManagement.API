@@ -1,4 +1,4 @@
-﻿using EnterpriseManagement.Models.TimeManagment.Enum;
+﻿using EnterpriseManagement.API.Models.TimeManagment.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -6,18 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.TimeManagement
+namespace EnterpriseManagement.API.Models.Time
 {
     public class TimeSheet : BaseEntity
     {
         public TimeSheet()
         {
-            TimeSheetRecords = new HashSet<TimeSheetRecord>();
+            Records = new HashSet<Record>();
         }
 
         public int EmployeeId { get; set; }
         public TimeSheetStatus Status { get; set; }
-        public ICollection<TimeSheetRecord> TimeSheetRecords { get; set; }
+        public ICollection<Record> Records { get; set; }
 
         // Navigation Properties
         public Employee Employee { get; set; }

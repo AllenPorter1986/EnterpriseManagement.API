@@ -1,23 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace EnterpriseManagement.Models.TimeManagement
+namespace EnterpriseManagement.API.Models.Time
 {
     public class Record : BaseEntity
     {
         public Record()
-        {
-            TimeSheetRecords = new HashSet<TimeSheetRecord>();
-            Details = new HashSet<Task>();
+        {            
+            Details = new HashSet<RecordTaskDetail>();
         }
 
+        public int Sequence { get; set; }
         public DateTime StartTime { get; set; }                
-        public virtual ICollection<Task> Details { get; set; }
-
-        // Navigation Properties
-        public virtual ICollection<TimeSheetRecord> TimeSheetRecords { get; set; }
+        public virtual ICollection<RecordTaskDetail> Details { get; set; }        
     }
 }
