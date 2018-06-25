@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="CommonServiceLocator, Version=2.0.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.5.8.6\lib\net45\CommonServiceLocator.dll</HintPath>
     </Reference>
@@ -92,6 +95,9 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -232,6 +238,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\MappingConfigurator.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
@@ -271,12 +278,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountBindingModels.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="ServiceModels\AccountBindingModels.cs" />
+    <Compile Include="ServiceModels\AccountViewModels.cs" />
+    <Compile Include="ServiceModels\BaseModel.cs" />
+    <Compile Include="ServiceModels\Inventory\Building.cs" />
+    <Compile Include="ServiceModels\IdentityModels.cs" />
+    <Compile Include="ServiceModels\Inventory\Obstacle.cs" />
+    <Compile Include="ServiceModels\Inventory\PositionalModel.cs" />
+    <Compile Include="ServiceModels\Inventory\Site.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="ServiceModels\Inventory\Vector.cs" />
+    <Compile Include="ServiceModels\Inventory\Zone.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -357,6 +371,14 @@
     <ProjectReference Include="..\EnterpriseManagement.API.Managers\EnterpriseManagement.API.Managers.csproj">
       <Project>{C998B5E4-AB84-4EB5-99AF-11A6F5C033C9}</Project>
       <Name>EnterpriseManagement.API.Managers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnterpriseManagement.API.Models\EnterpriseManagement.API.Models.csproj">
+      <Project>{F5F53439-24FE-42DD-822E-FDFBF77F7786}</Project>
+      <Name>EnterpriseManagement.API.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnterpriseManagement.API.Repositories\EnterpriseManagement.API.Repositories.csproj">
+      <Project>{CA145488-AEAF-4614-9E32-8653720CA12E}</Project>
+      <Name>EnterpriseManagement.API.Repositories</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnterpriseManagement.API.Models.Resource
 {
-    class Equipment
+    public class Equipment
     {
     }
 }

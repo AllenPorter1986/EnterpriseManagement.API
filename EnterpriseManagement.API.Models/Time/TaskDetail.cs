@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace EnterpriseManagement.API.Models.Time
 {
-    public class TaskDetail
+    public class TaskDetail : BaseEntity
     {
         public int FunctionId { get; set; }
         public int ClientId { get; set; }
-
     }
 }

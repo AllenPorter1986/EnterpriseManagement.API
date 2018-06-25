@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace EnterpriseManagement.API.Models.Inventory
 {
-    public class Obstacle : PostionalBaseEntity<ObstacleVector>
-    {        
+    public class BuildingVector : VectorBaseEntity
+    {
         public int BuildingId { get; set; }
-        public string Code { get; set; }
-        public int Sequence { get; set; }
 
         [ForeignKey("BuildingId")]
         public virtual Building Building { get; set; }

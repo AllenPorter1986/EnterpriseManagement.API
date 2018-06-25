@@ -16,9 +16,9 @@ namespace EnterpriseManagement.API.Models.Time
         [Key]
         [Column(Order = 2)]
         public int TaskId { get; set; }
-        [ForeignKey("TaskDetailId")]
+        [ForeignKey("RecordId")]
         public virtual Record Record { get; set; }
-        [ForeignKey("TaskDetailId")]
+        [ForeignKey("TaskId")]
         public virtual TaskDetail TaskDetail { get; set; }
     }
 }

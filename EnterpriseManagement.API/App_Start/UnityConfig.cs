@@ -1,7 +1,13 @@
-using EnterpriseManagement.API.Interfaces;
+using AutoMapper;
+using EnterpriseManagement.API.Interfaces.Managers;
+using EnterpriseManagement.API.Interfaces.Repositories;
 using EnterpriseManagement.API.Managers;
+using EnterpriseManagement.API.Models;
+using EnterpriseManagement.API.Repositories;
+using System.Data.Entity;
 using System.Web.Http;
 using Unity;
+using Unity.Lifetime;
 using Unity.WebApi;
 
 namespace EnterpriseManagement.API
@@ -17,8 +23,11 @@ namespace EnterpriseManagement.API
 
             // e.g. container.RegisterType<ITestService, TestService>();
 
+            container.RegisterInstance<IMapper>(MappingConfigurator.CreateMap());
+
             container.RegisterType<ISiteManager, SiteManager>();
-            
+            container.RegisterType<ISiteRepository, SiteRepository>();
+
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

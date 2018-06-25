@@ -1,13 +1,8 @@
 ﻿using EnterpriseManagement.API.Models.Time.Enum;
-using EnterpriseManagement.API.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EnterpriseManagement.API.Models.Time
-{
+{    
     public class Function : BaseEntity
     {
 

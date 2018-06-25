@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EnterpriseManagement.API.Models.Inventory
 {
-    public class Location:BaseEntity
+    public class Location : PostionalBaseEntity<LocationVector>
     {
         public Location()
         {
@@ -17,7 +17,7 @@ namespace EnterpriseManagement.API.Models.Inventory
         public int AisleId { get; set; }
         public string Code { get; set; }
         public int Sequence { get; set; }
-        public virtual ICollection<ItemLocation> ItemLocations { get; set; }
+        public virtual ICollection<ItemLocation> ItemLocations { get; set; }        
         [ForeignKey("AisleId")]
         public virtual Aisle Aisle { get; set; }
         //TODO: Add Spatial Information

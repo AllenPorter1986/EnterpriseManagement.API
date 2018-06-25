@@ -1,4 +1,6 @@
-﻿using EnterpriseManagement.API.Interfaces;
+﻿using AutoMapper;
+using EnterpriseManagement.API.Interfaces.Managers;
+using EnterpriseManagement.API.ServiceModels.Inventory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,37 +13,46 @@ namespace EnterpriseManagement.API.Controllers
     public class SitesController : ApiController
     {
         private ISiteManager _siteManager;
+        private IMapper _mapper;
 
-        public SitesController(ISiteManager siteManager)
+        public SitesController(ISiteManager siteManager, IMapper mapper)
         {
             _siteManager = siteManager;
+            _mapper = mapper;
         }
 
         // GET: api/Sites
-        public IEnumerable<string> Get()
+        public List<Site> Get()
         {
-            return new string[] { "value1", "value2" };
+            var sites = _siteManager.GetSites();
+            return _mapper.Map<List<Site>>(sites);
         }
 
         // GET: api/Sites/5
-        public string Get(int id)
+        public Site Get(int id)
         {
-            return "value";
+            var site = _siteManager.GetSite(id);
+            return _mapper.Map<Site>(site);
         }
 
         // POST: api/Sites
-        public void Post([FromBody]string value)
+        public void Post(Site site)
         {
+            var siteToSave = _mapper.Map<Models.Inventory.Site>(site);
+            _siteManager.Create(siteToSave);
         }
 
         // PUT: api/Sites/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, Site site)
         {
+            var siteToSave = _mapper.Map<Models.Inventory.Site>(site);
+            _siteManager.Update(id, siteToSave);
         }
 
         // DELETE: api/Sites/5
         public void Delete(int id)
         {
+            _siteManager.Delete(id);
         }
     }
 }

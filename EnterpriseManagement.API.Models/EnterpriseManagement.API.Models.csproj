@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PostionalBaseEntity.cs" />
     <Compile Include="BaseEntity.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Employee.cs" />
@@ -57,7 +58,11 @@
     <Compile Include="Financial\Invoice.cs" />
     <Compile Include="Financial\InvoiceLineItem.cs" />
     <Compile Include="Inventory\Aisle.cs" />
+    <Compile Include="Inventory\SiteVector.cs" />
+    <Compile Include="Inventory\ObstacleVector.cs" />
+    <Compile Include="Inventory\LocationVector.cs" />
     <Compile Include="Inventory\Building.cs" />
+    <Compile Include="Inventory\AisleVector.cs" />
     <Compile Include="Inventory\Enum\ItemType.cs" />
     <Compile Include="Inventory\Enum\ItemUnitType.cs" />
     <Compile Include="Inventory\Item.cs" />
@@ -66,6 +71,8 @@
     <Compile Include="Inventory\Location.cs" />
     <Compile Include="Inventory\Obstacle.cs" />
     <Compile Include="Inventory\Site.cs" />
+    <Compile Include="Inventory\BuildingVector.cs" />
+    <Compile Include="VectorBaseEntity.cs" />
     <Compile Include="Inventory\Zone.cs" />
     <Compile Include="Fulfillment\Enum\OrderStatus.cs" />
     <Compile Include="Fulfillment\Enum\OrderType.cs" />

@@ -31,7 +31,7 @@ namespace EnterpriseManagement.API.Shared
             get {
                 if (string.IsNullOrWhiteSpace(_databaseConnectionString))
                 {
-                    _databaseConnectionString = ConfigurationManager.ConnectionStrings["EnterpiseManagement"].ConnectionString;
+                    _databaseConnectionString = ConfigurationManager.ConnectionStrings["EnterpriseManagement"].ConnectionString;
 
                     if (string.IsNullOrWhiteSpace(_databaseConnectionString))
                     {
